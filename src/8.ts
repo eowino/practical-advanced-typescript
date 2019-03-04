@@ -27,4 +27,4 @@ if (isData(responseFromAPI)) {
 // 'any' is the least restrictive type in TypeScript
 
 // 'unknown' is the most restrictive as it doesn't let you call anything on it
-// you have to provide checks to narrow down the type via control flows
+// you have to provide checks to narrow down the type via control flows or casting
