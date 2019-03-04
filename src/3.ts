@@ -29,3 +29,5 @@ function isAdmin(usr: IAdmin | IUser): usr is IAdmin {
 // TypeScript will automatically infer the exact type of our object
 // by looking at all the possible types in the union and then
 // keeping only the ones that have that specific property defined.
+
+// The isAdmin function can also be used, however, it adds some indirection
