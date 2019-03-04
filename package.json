@@ -1,0 +1,16 @@
+{
+  "name": "practical-typescript",
+  "version": "1.0.0",
+  "description": "Notes on practical typescript",
+  "main": "index.js",
+  "scripts": {
+    "init": "tsc --init"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  }
+}
