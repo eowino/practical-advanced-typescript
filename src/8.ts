@@ -17,6 +17,11 @@ console.log(responseFromAPI.data); // this is intentionally erroneous
 
 if (isData(responseFromAPI)) {
   console.log(responseFromAPI.data.id); // this is fine
+} else if (typeof responseFromAPI === 'string') {
+  console.log(responseFromAPI.toLocaleUpperCase());
+} else {
+  // you can type cast it if you're sure about it's type
+  console.log((<number[]>responseFromAPI).indexOf(0));
 }
 
 // 'any' is the least restrictive type in TypeScript
