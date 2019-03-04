@@ -20,6 +20,10 @@ function redirect(user: IAdmin | IUser) {
 function routeToAdmin(role: string) {}
 function routeToUser(email: string) {}
 
+function isAdmin(usr: IAdmin | IUser): usr is IAdmin {
+  return (<IAdmin>usr).id !== undefined;
+}
+
 // Using the JavaScript “in” operator, we can test for the presence of different properties.
 
 // TypeScript will automatically infer the exact type of our object
