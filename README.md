@@ -1,1 +1,1 @@
-# practical-typescript
+# practical-advanced-typescript
