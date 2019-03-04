@@ -9,8 +9,10 @@ interface IUser {
 
 function redirect(user: IAdmin | IUser) {
   if ('role' in user) {
+    // in this if block - 'user' is assumed to be an admin
     routeToAdmin(user.role);
   } else {
+    // in this else block - 'user' is assumed to be a user
     routeToUser(user.email);
   }
 }
